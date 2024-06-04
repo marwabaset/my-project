@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:new_project/controller/favorite.dart';
 
 class Favorite extends StatelessWidget {
-  const Favorite({super.key});
+  final bool active;
+  const Favorite({super.key, required this.active});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,7 @@ class Favorite extends StatelessWidget {
                       padding: const EdgeInsets.only(
                           right: 15.0, left: 4, bottom: 20),
                       child: Container(
-                        width: 180,
+                        width: 100,
                         height: 130,
                         decoration: BoxDecoration(
                             boxShadow: [
@@ -60,13 +63,16 @@ class Favorite extends StatelessWidget {
                                       fontFamily: "Exo 2",
                                       fontWeight: FontWeight.w500)),
                             ),
-                            IconButton(
-                              padding: EdgeInsets.only(left: 150),
-                              onPressed: () {},
-                              iconSize: 35,
-                              icon: Icon(Icons.favorite),
-                              color: Colors.red[700],
-                            )
+                            GetBuilder<FavoriteController>(
+                                builder: ((controller) => IconButton(
+                                      padding: EdgeInsets.only(left: 130),
+                                      onPressed: () {},
+                                      iconSize: 30,
+                                      icon: Icon(active
+                                          ? Icons.favorite
+                                          : Icons.favorite_border_outlined),
+                                      color: Colors.red[700],
+                                    )))
                           ],
                         ),
                       ),

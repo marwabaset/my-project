@@ -18,7 +18,7 @@ class Curved_NB extends StatelessWidget {
   final screens = [
     HomePage(),
     HomePage(),
-    Favorite(),
+    const Favorite(active: false),
     Notices(),
     Account(),
   ];

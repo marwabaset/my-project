@@ -28,17 +28,23 @@ class CustomAppBarHome extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
-                "Hi...",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32,
-                    fontFamily: "Exo 2",
-                    fontWeight: FontWeight.w600),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "Hi...",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 32,
+                      fontFamily: "Exo 2",
+                      fontWeight: FontWeight.w600),
+                ),
               ),
-              Image.asset(
-                'assets/image/logo.png',
-                width: 100,
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Image.asset(
+                  'assets/image/logo.png',
+                  width: 100,
+                ),
               ),
             ],
           ),

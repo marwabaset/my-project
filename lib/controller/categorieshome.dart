@@ -5,8 +5,8 @@ import 'package:new_project/data/model/categoriesmodle.dart';
 
 class CategoriesHomeController extends GetxController {
   final http.Client client = http.Client();
-  final String token = '2|tAbh0a41BKTDBkQCOVMueIqqzvCfDe3nfktm7ZMY7a75df19';
-  final String url = 'http://192.168.1.11:8000/api/v1/students/home';
+  final String token = '3|Ox1N8BmpuAkQI8seePWavrkNMQm14fLTAcHqrBlZd060f5b2';
+  final String url = 'http://192.168.1.4:8000/api/v1/students/home';
   var categories = <Categories>[].obs;
 
   @override

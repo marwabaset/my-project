@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import 'package:get/get.dart';
-import 'package:new_project/controller/latestcontroller.dart';
 import 'package:new_project/data/model/recommendemodel.dart';
 
 class RecomendeController extends GetxController {
@@ -17,22 +16,12 @@ class RecomendeController extends GetxController {
   var allrecommendedCourses = <Recommended>[].obs;
   var displayRecommended = <Recommended>[].obs;
 
-  // var items =
-  //  List.generate(Recommended[]..length, (index) => 'items $index').obs;
   int itemsDisplayed = 3;
 
-  // void showMore() {
-  //   if (itemsDisplayed.va < items.length) {
-  //     itemsDisplayed.value += 5;
-  //     if (itemsDisplayed.value > items.length) {
-  //       int remainingItems = items.length - itemsDisplayed.value;
-  //       itemsDisplayed.value += (remainingItems >= 5) ? 5 : remainingItems;
-  //     }
-  //   }
-  // }
+ 
 
-  final String token = '2|tAbh0a41BKTDBkQCOVMueIqqzvCfDe3nfktm7ZMY7a75df19';
-  final String url = 'http://192.168.1.11:8000/api/v1/students/home';
+  final String token = '3|Ox1N8BmpuAkQI8seePWavrkNMQm14fLTAcHqrBlZd060f5b2';
+  final String url = 'http://192.168.1.4:8000/api/v1/students/home';
 
   @override
   void onInit() {

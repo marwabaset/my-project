@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_animated_button/flutter_animated_button.dart';
 import 'package:get/get.dart';
 import 'package:new_project/controller/latestcontroller.dart';
 import 'package:new_project/controller/recomendedcontroller.dart';
@@ -101,18 +100,7 @@ class LatestHome extends StatelessWidget {
               ),
             ),
           );
-          //return null;
-
-          //  else if (index == itemsDisplayed.value &&
-          //       itemsDisplayed.value != items.length) {
-          //     return IconButton(
-          //       style: ButtonStyle(),
-          //       onPressed: showMore,
-          //       icon: Icon(Icons.navigate_next),
-          //     );
-          //   } else {
-          //     return SizedBox.shrink();
-          //   }
+        
         });
   }
 }

@@ -34,14 +34,15 @@ class CustomCardHome extends StatelessWidget {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
+                        spreadRadius: 1,
                         blurRadius: 4,
+                        blurStyle: BlurStyle.outer,
                         offset:
                             const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.deepPurple[50]),
+                    color: Colors.white),
                 child: Column(
                   children: [
                     Obx(() {

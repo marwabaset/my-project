@@ -8,8 +8,8 @@ class LatestController extends GetxController {
   var alllatest = <Latest>[].obs;
   var displayLatest = <Latest>[].obs;
   int itemsDisplayed = 3;
-  final String token = '2|tAbh0a41BKTDBkQCOVMueIqqzvCfDe3nfktm7ZMY7a75df19';
-  final String url = 'http://192.168.1.11:8000/api/v1/students/home';
+  final String token = '3|Ox1N8BmpuAkQI8seePWavrkNMQm14fLTAcHqrBlZd060f5b2';
+  final String url = 'http://192.168.1.4:8000/api/v1/students/home';
 
   @override
   void onInit() {
